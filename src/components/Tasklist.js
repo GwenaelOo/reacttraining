@@ -7,19 +7,19 @@ class Tasklist extends React.Component {
 
 let Tasks = '';
 let test = ['tache0', 'tache1', 'tache2'];
-let list = ''
+let Tasklist = []
 for (let item in test) {
 
     let Tasks = {nom: test[item].task }
 
 };
 
-test.push(Tasks);
+Tasklist.push(Tasks);
 
       return (
         <div className="List">
 {
-    list.map(function (item) { return <Task task={item} />; })
+    Tasklist.map(function (item) { return <Task task={item} />; })
         
         }
         </div>
